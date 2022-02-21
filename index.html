@@ -13,25 +13,27 @@
 	</head>
 	<body>
 		<h1>Great Calculator</h1>
+		<div data-previous-operand class="previous-operand"></div>
+		<div data-current-operand class="current-operand"></div>
 		<ul>
-			<li id="seven">7</li>
-			<li id="eight">8</li>
-			<li id="nine">9</li>
-			<li id="times">*</li>
-			<li id="four">4</li>
-			<li id="five">5</li>
-			<li id="six">6</li>
-			<li id="minus">-</li>
-			<li id="one">1</li>
-			<li id="two">2</li>
-			<li id="three">3</li>
-			<li id="plus">+</li>
-			<li id="changeToNegOrPos">+/-</li>
-			<li id="zero">0</li>
-			<li id="dot">.</li>
-			<li id="equals">=</li>
+			<button><li id="seven" value="7" data-number>7</li></button>
+			<button><li id="eight" value="8" data-number>8</li></button>
+			<button><li id="nine" value="9" data-number>9</li></button>
+			<button><li id="times" data-operation>*</li></button>
+			<button><li id="four" value="4" data-number>4</li></button>
+			<button><li id="five" value="5" data-number>5</li></button>
+			<button><li id="six" value="6" data-number>6</li></button>
+			<button><li id="minus" data-operation>-</li></button>
+			<button><li id="one" value="1" data-number>1</li></button>
+			<button><li id="two" value="2" data-number>2</li></button>
+			<button><li id="three" value="3" data-number>3</li></button>
+			<button><li id="plus" data-operation>+</li></button>
+			<button><li id="changeToNegOrPos" data-operation>+/-</li></button>
+			<button><li id="zero" value="0" data-number>0</li></button>
+			<button><li id="divide" data-operation>/</li></button>
+			<button><li id="equals" data-equals>=</li></button>
 		</ul>
-		<h2>Result: <span id="placeToPutResult"></span></h2>
+		<h2>Result: <span id="total">0</span></h2>
 
 
 		<script type="text/javascript" src="js/main.js"></script>

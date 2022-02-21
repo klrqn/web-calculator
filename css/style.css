@@ -10,8 +10,24 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+html {
+  font-size: 115%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, rgb(145, 154, 206), rgb(115, 190, 234));
+}
+
 h1, h2{
+  color: white;
   text-align: center;
+}
+
+h1 {
+  margin-top: 30%;
+}
+
 }
 img{
   display: block;
@@ -19,20 +35,42 @@ img{
   margin: 0 auto;
 }
 ul{
-  width: 100px;
-  height: 200px;
-  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:stretch;
+  width:21rem;
+  height: auto;
+  /* border: 3px solid black; */
   margin: 0 auto;
   list-style: none;
   padding: 0;
+
+  /* center vertically */
+  /* display: table; */
+  
 }
 li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 94px;
-  height: 49px;
+  width: 4rem;
+  height: 5rem;
+  margin: .2rem;
+  background: radial-gradient(rgb(255, 255, 255), rgb(169, 172, 189));
+  border-radius: 1rem .4rem 1rem .4rem;
   border: 1px solid black;
+  box-shadow: 3px 3px 6px grey;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+button {
+  border: none;
+  background: none;
+  width: 4.4rem;
+  height: auto;
+}
